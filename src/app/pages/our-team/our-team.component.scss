@@ -1,0 +1,48 @@
+.avatar {
+    position: relative !important;
+    display: inline-block !important;
+    width: 3.125rem !important;
+    height: 3.125rem !important;
+    border-radius: 0.5rem !important;
+}
+.avatar-img {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    -o-object-fit: cover !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+}
+
+.avatar-lg {
+    width: 4.25rem !important;
+    height: 4.25rem !important;
+}
+.avatar-lg-f {
+    width: 5rem !important;
+    height: 5rem !important;
+}
+.avatar-circle {
+    border-radius: 50% !important;
+}
+.card{
+    border: 0.0625rem solid rgba(33,50,91,.1) !important;
+    border-radius: 0.5rem !important;    
+    border-width: 0 !important;
+    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%) !important;
+}
+.card-footer {
+    padding: 2rem 2rem !important;
+    background-color: transparent !important;
+    border-top: 0.0625rem solid rgba(33,50,91,.1) !important;
+}
+.card-subtitle {
+    margin-top: -0.25rem;
+    margin-bottom: 0;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+}
+.card-text:last-child {
+    margin-bottom: 0;
+}

@@ -1,0 +1,34 @@
+<div class="container-fluid text-center">
+    <div class="container py-4">
+        <h1 class="display-6 fw-bolder">{{tempGallery.title}}<span class="stroke"> Gallery</span></h1>
+        <p class="text-muted lh-lg my-3 mx-auto col-md-6  pb-5">{{tempGallery.content}}</p>
+        <div class="row">
+            <div class="col-md-4 pointer post-preview"
+                *ngFor="let item of imageArray ;let i = index" data-bs-toggle="modal"
+                data-bs-target="#imageModel">
+                <div class="card rounded-3" (click)="passedIndex(i)">
+                    <img [src]="item" class="img-fluid rounded-3 card-img-top">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModel" tabindex="-1" aria-labelledby="imageModelLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h6 class="modal-title" id="imageModelLabel">{{tempGallery.title}}</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 position-relative">
+                <img [src]="imageArray[imageIndex]" alt=""
+                    class="img-fluid model-image rounded-bottom">
+                <!-- <img src="https://source.unsplash.com/{{tempGallery.folder}}/45{{imageIndex}}x300" alt=""> -->
+                <button class="btn btn-dark position-absolute bottom-0 start-0 rounded-0" (click)="prevImage()"><</button>
+                <button class="btn btn-dark position-absolute bottom-0 end-0 rounded-0" (click)="nextImage()">></button>
+            </div>
+        </div>
+    </div>
+</div>

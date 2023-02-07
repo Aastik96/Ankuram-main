@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contactusModal" tabindex="-1" aria-labelledby="contactusModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactusModalLabel">Contact Form</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-1" style="height: 70vh !important;">
+            <iframe id="contactIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSfoL2fTKSUEGw3WAltIYSor6_7H8FUjzzFFs-E4TFih0N5UPA/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="modal-footer text-center justify-content-center">
+            <span class="fw-bold" style="font-size: small !important;">Note: <span class="fw-normal subtitle">Please fill the form submit button is at the end of the Form.</span></span> 
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="onModelSubmit()">Submit</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="joinusModal" tabindex="-1" aria-labelledby="joinusModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="joinusModalLabel">Join Us Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-1" style="height: 70vh !important;">
+              <iframe id="contactIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSd58PITsFg7AlyTLzU287BNDfieHfmAmGjUghGfuOevOmIPKw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+          <div class="modal-footer text-center justify-content-center">
+              <span class="fw-bold" style="font-size: small !important;">Note: <span class="fw-normal subtitle">Please fill the form submit button is at the end of the Form.</span></span> 
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" (click)="onModelSubmit()">Submit</button> -->
+          </div>
+        </div>
+      </div>
+    </div>

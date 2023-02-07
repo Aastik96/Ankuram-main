@@ -1,0 +1,28 @@
+<div class="container-fluid p-0">
+    <div class="header mb-4">
+        <img src="assets/infra.jpg" class="img-fluid h-100 w-100 " alt="">
+    </div>
+    <div class="container ">
+        <div class="mb-4">
+            <a routerLink="" class="text-decoration-none text-hover">Home</a><span class="mx-3">></span><span
+                class="text-decoration-none text-muted">Infrastructre</span>
+        </div>
+
+        <h1 class="display-6 fw-bolder">School<span class="stroke"> Infrastructre</span></h1>
+        <p class="text-muted lh-lg my-3 mx-auto">Ankuram International school is spreaded over 6000 sq.mtr. lush green campus.The architecture reflects morden style with all latest facilities. As it is situated in tribal area, students will enjoy pollution free environment and a pleasant climate round the year.</p>
+        <div class="row mb-4">
+            <div class="col-md-3 p-0 pointer" *ngFor="let item of infrastructure; let i = index;" [class.ms-auto]="i==4" [class.me-auto]="i==5">
+                <div class="card m-3 rounded-3 p-3 shadow-sm post-preview-nosh" (click)="navigateTo(item.folder)">
+                    <div
+                        class="rounded-circle bg-gradient bg-danger icon d-flex justify-content-center align-items-center">
+                        <img [src]="item.img" alt="" width="40" class="m-2 position-absolute icon-img">
+                    </div>
+                    <div class="">
+                        <h5 class="mt-3">{{item.title}}</h5>
+                        <p class="fs-6 mb-0">{{item.content}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

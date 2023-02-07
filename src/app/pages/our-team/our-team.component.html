@@ -1,0 +1,91 @@
+<div class="container-fluid p-0">
+    <div class="header mb-4">
+        <img src="assets/team.jpg" class="img-fluid h-100 w-100 " alt="">
+    </div>
+    <div class="container">
+        <div class="mb-4">
+            <a routerLink="" class="text-decoration-none text-hover">Home</a><span class="mx-3">></span><span
+                class="text-decoration-none text-muted">Our Team</span>
+        </div>
+        <div class="container">
+            <!-- Heading -->
+            <div class="w-md-75 w-lg-50 col-md-8 mb-5 mb-md-9">
+                <h1 class="display-6 fw-bolder">Our<span class="stroke"> Team</span></h1>
+                <span class="text-cap">The staff is highly qualified and experienced in their field and is committed to make the learning experiene of every student a rewarding one. Our faculty includes teachers who are trained by international trainers.</span>
+            </div>
+            <!-- End Heading -->
+
+            <div class="row gx-3 mb-5">
+
+                <div class="col-sm-6 col-lg-4 mb-3 pointer" *ngFor="let item of head">
+                    <!-- Card -->
+                    <div class="card card-transition h-100 " (click)="navigateTo(item.subtitle)">
+                        <div class="card-body">
+                            <div class="avatar avatar-lg-f avatar-circle mb-4">
+                                <img class="avatar-img" [src]="item.image" alt="Image Description">
+                            </div>
+                            <br>
+                            <span class="card-subtitle">{{item.subtitle}}</span>
+                            <h4 class="card-title">{{item.title}}</h4>
+                            <p class="card-text">{{item.content}}</p>
+                        </div>
+
+                        <!-- <div class="card-footer pt-0">
+
+                  </div> -->
+
+                    </div>
+                    <!-- End Card -->
+                </div>
+
+            </div>
+            <!-- End Row -->
+            <div class="w-md-75 w-lg-50 col-md-8 mb-5 mb-md-9">
+                <h3 class=" fw-bolder">Academics Staff <span class="stroke"> </span></h3>
+                <!-- <span class="text-cap col-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic minima
+                    iste autem incidunt expedita ullam officiis quos fuga. Explicabo reprehenderit possimus quisquam
+                    amet itaque earum veniam iusto eaque atque?</span> -->
+            </div>
+            <div class="row gx-3 mb-5">
+                <div class="col-sm-6 col-lg-4 mb-3" *ngFor="let item of teachers">
+                    <!-- Card -->
+                    <div class="card card-transition h-100">
+                        <div class="card-body">
+                            <div class="avatar avatar-lg avatar-circle mb-4">
+                                <img class="avatar-img" [src]="item.image" alt="Image Description">
+                            </div>
+                            <br>
+                            <span class="card-subtitle">{{item.subtitle}}</span>
+                            <h4 class="card-title">{{item.title}}</h4>
+                            <!-- <p class="card-text">{{item.content}}</p> -->
+                        </div>
+                        <!-- <div class="card-footer pt-0">
+                  </div> -->
+                    </div>
+                    <!-- End Card -->
+                </div>
+            </div>
+            <!-- End Row -->
+            <!-- <div class="w-md-75 w-lg-50 col-md-8 mb-5 mb-md-9">
+                <h3 class=" fw-bolder">Non Academics Staff <span class="stroke"> </span></h3>
+                
+            </div>
+            <div class="row gx-3 mb-5">
+                <div class="col-sm-6 col-lg-4 mb-3" *ngFor="let item of teachers">
+                    <div class="card card-transition h-100">
+                        <div class="card-body">
+                            <div class="avatar avatar-lg avatar-circle mb-4">
+                                <img class="avatar-img" [src]="item.image" alt="Image Description">
+                            </div>
+                            <br>
+                            <span class="card-subtitle">{{item.subtitle}}</span>
+                            <h4 class="card-title">{{item.title}}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- End Row -->
+        </div>
+    </div>
+</div>

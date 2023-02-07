@@ -1,0 +1,70 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+.post-preview{
+    border-radius: 0.1875rem !important;
+    transition: all .3s ease-in-out !important;
+    margin: 0 0 10px !important;
+}
+
+.post-preview-nosh{
+    border-radius: 0.1875rem !important;
+    transition: all .3s ease-in-out !important;
+    // margin: 0 0 35px !important;
+}
+.post-preview:hover {
+    box-shadow: 0 4px 16px rgba(90, 90, 90, .05);
+    transform: translateY(-8px);
+}
+.post-preview-nosh:hover {
+    transform: translateY(-5px);
+}
+.pointer{
+    cursor: pointer !important;
+}
+.stroke {
+    color: #FF6600 !important;
+    // -webkit-text-stroke-width: 2px;
+    // -webkit-text-stroke-color: #FF6600 !important;
+    // stroke-width: 3;
+}
+.header{
+    height: 250px !important;
+    img{
+        object-fit: cover !important;
+        // object-position: inherit;
+    }
+}
+.text-hover{
+    color: black !important;
+    &:hover{
+        color: #dc3545 !important;
+    }
+}
+
+.text-danger{
+    color: #FF6600 !important;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #FF6600;
+    border-color: #FF6600;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #ce5200;
+    border-color: #ce5200;
+}
+
+.btn-outline-danger:hover {
+    color: #fff;
+    background-color: #FF6600;
+    border-color: #FF6600;
+}
+.btn-outline-danger {
+    color: #FF6600;
+    border-color: #FF6600;
+}

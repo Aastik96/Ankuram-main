@@ -1,0 +1,95 @@
+<div class="container-fluid p-0">
+    <div class=" mb-4">
+        <img src="assets/lokesh.png" *ngIf="id=='Founder'" class="img-fluid h-100 w-100" alt="">
+        <img src="assets/charu.png" *ngIf="id=='Director'" class="img-fluid h-100 w-100" alt="">
+        <img src="assets/ritesh.png" *ngIf="id=='Principal'" class="img-fluid h-100 w-100" alt="">
+    </div>
+    <div class="container ">
+        <div class="mb-4">
+            <a routerLink="" class="text-decoration-none text-hover">Home</a><span class="mx-3">></span><span
+                class="text-decoration-none text-muted">Message</span>
+        </div>
+
+        <h1 class="display-6 fw-bolder">{{id}}'s<span class="stroke"> Message</span></h1>
+        <!-- <p class="text-muted lh-lg my-3 mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+            expedita nam. Vero quisquam rem amet, cum, quaerat quo.</p> -->
+        <div class="mb-5 mt-4 bg-light p-md-5 p-3" *ngIf="id=='Founder'">
+            Dear Parents and students,
+            <br><br>
+            I feel great to welcome you to "Ankuram' family. The thought process behind bringing Ankuram to you was
+            brought up by my grandfather Pandit Hariomji Dave. His concept was simple ‘How to provide world class
+            education in Jhabua, Madhya Pradesh’. With this thought, I have extensively researched, visited many schools
+            and have gathered opinion and guidance from different educators. <br><br>
+
+            Finally, 2 years ago, we started our journey of providing education, from Ranapur. To facilitate the
+            concept, we chose the best teachers. <br><br>
+            It is worth to mention that at that time we were the only school in the area to provide homeschooling during
+            the covid 19 pandemic. Hence, we undertook expansion activicites so that there was no effect of the pandemic
+            to the learning of our students and no compromise was made even during covid second wave.
+            <br><br>
+            Our efforts towards providing quality education has progressed to another level and now we are proudly
+            presenting a state of art school. This structure has been built under the guidance of well experienced and
+            master educator Dr Ritesh Limaye.
+            <br><br>
+            Dr Ritesh Limaye has an experience of over 21 years in handling school affairs and as principal various
+            prestigious educational institutes along with dedicated team of teachers.
+            <br><br>
+            With all the efforts from our team and guidance of expert educators, I am confident that Ankuram will prove
+            to be a benchmark in providing quality education in Jhabua and will be able to impart world class education
+            to the students.
+            <br><br>
+            <span class="fw-bold">Dr Lokesh Dave</span> <br>
+            MD Homeopathy <br>
+            Founder <br>
+            ANKURAM INTERNATIONAL SCHOOL, JHABUA <br>
+        </div>
+        <div class="mb-5 mt-4 bg-light p-md-5 p-3" *ngIf="id=='Director'">
+            Dear parents and students
+            <br><br>
+            Education is your doorway to success. No doubt that to be successful, hard work is must but without
+            education, it will not yeild any result. Our whole life is the process of learning and gaining new useful
+            knowledge.
+            <br><br>
+            We are commited to provide world class education to children of Jhabua so they can become good citizens.
+            <br><br>
+            Moving ahead on this path our target is to provide dynamic educational environment that helps children to
+            face the demands and challenges of a competitive world. For this we will inspire young minds to develop
+            critical thinking and problem solving skills,foster values of honesty, teamwork, leadership and social
+            responsibility, provide the atmosphere and equipment for the exploration of activities that will help
+            students nurture creativity and sharpen their intellect,promote integration of global and local knowledge
+            and skills by offering multi disciplinary learning opportunities.
+            We have been making painstaking efforts to make the teaching-learning more dynamic, more vibrant and of
+            course,modern.
+            <br><br>
+            We are looking forward to everyone having a great time ahead.
+            <br><br>
+            <span class="fw-bold">Dr Charulata Dave</span><br>
+            Director <br>
+            Ankuram International School,Jhabha
+        </div>
+
+        <div class="mb-5 mt-4 bg-light p-md-5 p-3" *ngIf="id=='Principal'">
+            Dear Parents <br>
+Greetings from Ankuram Jhabua
+            <br><br>
+            Ankuram International School, Jhabua is another branch of Ankuram Welfare Society. 
+            <br><br>
+            We believe that every child is unique and we should respect this uniqueness. We feel that “ All children can and will learn but not compulsorily at the same time and same day”.  The learning can take place anytime and anywhere. 
+            <br>We are going to provide a perfect combination of Academic and Co-curricular activities to our students. Only reason is to bring out the best in them.
+            We will not only give them excellence in Academics but surely will make them good human beings and responsible citizens of our country.
+            <br>We request parents to support us in this noble cause wholeheartedly. <br><br>
+            Yours sincerely 
+            <br><br>
+            <span class="fw-bold">Dr. Ritesh Limaye </span><br>
+            Principal <br>
+            Ankuram International School, Jhabua
+        </div>
+
+        <div class="text-center mb-5">
+            <span class="text-danger text-decoration-none pointer" *ngIf="id!='Founder'" (click)="navigateTo('Founder')">Founder's Message</span> 
+            <span class="text-danger text-decoration-none pointer" *ngIf="id=='Director'">&nbsp; | &nbsp;</span>
+            <span class="text-danger text-decoration-none pointer" *ngIf="id!='Principal'" (click)="navigateTo('Principal')">Principal's Message</span>
+            <span class="text-danger text-decoration-none pointer" *ngIf="id!='Director'" (click)="navigateTo('Director')"> &nbsp; | &nbsp; Director's Message</span>
+        </div>
+    </div>
+</div>

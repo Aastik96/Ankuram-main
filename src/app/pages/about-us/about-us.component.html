@@ -1,0 +1,87 @@
+<div class="container-fluid p-0">
+    <div class="header mb-4">
+        <img src="assets/about.jpg" class="img-fluid h-100 w-100 " alt="">
+    </div>
+    <div class="container ">
+        <div class="mb-4">
+            <a routerLink="" class="text-decoration-none text-hover">Home</a><span class="mx-3">></span><span
+                class="text-decoration-none text-muted">About-us</span>
+        </div>
+
+        <div class="text-center w-lg-75 mx-auto">
+            <h1 class="display-6 fw-bolder">About<span class="stroke"> Us</span></h1>
+            <p class="text-muted lh-lg my-3 pb-3 mx-auto">Ankuram International school Jhabua is a dynamic and progressive educational institute with the vision "Enable All" that aims to provide the best possible education to the students in the parameters of sound values and disciplined environment.</p>
+        </div>
+        <div class="row gx-3">
+            <div class="col mb-3">
+                <div class="bg-img-start" style="background-image: url('assets/img1.jpg'); height: 15rem;"></div>
+            </div>
+
+            <div class="col-3 d-none d-md-block mb-3">
+                <div class="bg-img-start" style="background-image: url('assets/img4.jpg'); height: 15rem;"></div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="bg-img-start" style="background-image: url('assets/img3.jpg'); height: 15rem;"></div>
+            </div>
+
+            <div class="w-100"></div>
+
+            <div class="col mb-3 mb-md-0">
+                <div class="bg-img-start" style="background-image: url('assets/img2.jpg'); height: 15rem;"></div>
+            </div>
+
+            <div class="col-4 d-none d-md-block mb-3 mb-md-0">
+                <div class="bg-img-start" style="background-image: url('assets/img5.jpg'); height: 15rem;"></div>
+            </div>
+
+            <div class="col">
+                <div class="bg-img-start" style="background-image: url('assets/img6.jpg'); height: 15rem;"></div>
+            </div>
+        </div>
+        <div class="container text-center my-5">
+            <h3 class="fw-bolder lh-base">Our <span class="text-danger">Management</span></h3>
+            <!-- <p class="text-muted lh-lg my-3 mx-auto w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, expedita nam. Vero quisquam rem amet, cum, quaerat quo.</p> -->
+        </div>
+        <div class="row my-md-5">
+            <div class="text-center col-md-4">
+                <div class="card p-3 shadow-card pointer post-preview-nosh" (click)="navigateTo('Founder')">
+                    <h4 class="fw-bolder">Dr Lokesh Dave</h4>
+                    <span class="text-cap">From Founder’s Desk</span>
+                    <p class="text-muted lh-lg my-2 mx-auto ">Education is not the learning of facts but the training of the mind to think.</p>
+                </div>
+            </div>
+            <div class="text-center col-md-4">
+                <div class="card p-3 shadow-card pointer post-preview-nosh" (click)="navigateTo('Director')">
+                    <h4 class="fw-bolder">Dr Charulata Dave</h4>
+                    <span class="text-cap">From the Desk of Director</span>
+                    <p class="text-muted lh-lg my-2 mx-auto ">Education is not just about going to school and getting a degree.
+                        It's about widening your knowledge and absorbing the truth about life.</p>
+                </div>
+            </div>
+            <div class="text-center col-md-4">
+                <div class="card p-3 shadow-card pointer post-preview-nosh" (click)="navigateTo('Principal')">
+                    <h4 class="fw-bolder">Dr. Ritesh Limaye</h4>
+                    <span class="text-cap">From the Desk of Principal</span>
+                    <p class="text-muted lh-lg my-2 mx-auto "> Education is the ability to meet life’s situations.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="container text-center my-5">
+            <h3 class="fw-bolder">School Infrastructure</h3>
+            <p class="text-muted lh-lg my-3 mx-auto w-50">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis, expedita nam. Vero quisquam rem amet, cum, quaerat quo.</p>
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let item of infra">
+                    <div class="text-center m-md-3 p-4 shadow-sm post-preview-nosh br pointer">
+                        <img [src]="item.img" alt="" class="img-fluid br-icon">
+                        <h4 class="fw-bold m-0 text-danger">{{item?.title}}</h4>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div> -->
+
+    </div>
+</div>

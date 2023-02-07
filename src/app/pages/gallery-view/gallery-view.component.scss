@@ -1,0 +1,37 @@
+.card-img-top {
+    width: 100% !important;
+    height: 250px !important;
+    object-fit: cover !important;
+}
+.post-preview {
+    margin: 0 0 20px !important;
+}
+.br {
+    width: 466px !important;
+    height: 300px !important;
+}
+.model-image {
+    width: 100% !important;
+    height: 450px !important;
+    object-fit: contain !important;
+}
+.modal-title {
+    line-height: 0 !important;
+}
+.modal-content {
+    border: none !important;
+}
+.btn-dark {
+    width: 50px !important;
+    font-size: 40px !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    height: 100% !important;
+    border: none;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    &:hover{
+        background: rgba(0, 0, 0, 0.5) !important;
+    }
+}

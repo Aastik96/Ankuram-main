@@ -1,0 +1,100 @@
+<ngb-carousel >
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper position-relative">
+      <img src="/assets/ankuram.png" alt="Random first slide" class="img-fluid"/>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrapper position-relative">
+      <img src="/assets/ankuram.png" alt="Random second slide" class="img-fluid" />
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="picsum-img-wrappe position-relativer">
+      <img src="/assets/Champs.PNG" alt="Random third slide" class="img-fluid" />
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="container pt-5 text-center">
+  <img src="assets/chota_school.png" class="" width="100px">
+  <p class="fw-bold pt-2">Pre Primary section Powered by <br><span class="stroke">My Chhota School, New Delhi</span>
+  </p>
+  <div class="row">
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://ankuraminternationalschool.in/Images/Homepage/home_about_us.jpg"
+             class="img-fluid rounded-3 p-4" alt="">
+      </div>
+      <div class="col-md-6 align-self-center">
+        <h1 class="display-4 fw-bolder">About <span class="stroke">Ankuram</span></h1>
+        <p class="text-muted lh-lg my-3 mx-auto">Ankuram International school Jhabua is a dynamic and
+          progressive educational institute with the vision "Enable All" that sima to provide the best
+          possible education to the students under its care set with in the parameters of sound values and
+          disciplined environment.
+          What makes a child gifted & talented may not always be good grades in school ,but a different
+          way of looking at the world and learning.
+        </p>
+        <button class="btn btn-outline-danger rounded-0 px-4" routerLink="about-us">Know More</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center mb-md-4">
+    <h1 class="display-6 fw-bolder">School Gallery <span class="stroke"></span></h1>
+    <p class="text-muted lh-lg my-3 mx-auto w-50">Take a glimpse in Ankuram International school's Gallery</p>
+    <div class="row mb-4 mt-4">
+      <div class="col-md-4 pointer ">
+        <img src="https://ankuraminternationalschool.in/Images/Homepage/g1.jpg"
+             class="img-fluid gallery-img rounded-3 post-preview">
+      </div>
+      <div class="col-md-4 pointer">
+        <img src="https://ankuraminternationalschool.in/Images/Homepage/g2.jpg"
+             class="img-fluid gallery-img rounded-3 post-preview">
+      </div>
+      <div class="col-md-4 pointer">
+        <img src="https://ankuraminternationalschool.in/Images/Homepage/g3.jpg"
+             class="img-fluid gallery-img rounded-3 post-preview">
+      </div>
+    </div>
+    <button class="btn btn-danger rounded-0 px-5" routerLink="gallery">View All</button>
+  </div>
+
+  <div class="container text-center">
+    <h1 class="display-6 fw-bolder">Infrastructure<span class="stroke"></span></h1>
+    <p class="text-muted lh-lg my-3 mx-auto w-75">Ankuram International school is spreaded over 6000 sq.mtr. lush
+      green campus.The architecture reflects morden style with all latest facilities. As it is situated in tribal
+      area, students will enjoy pollution free environment and a pleasant climate round the year.</p>
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of infra">
+        <div class="text-center m-md-3 p-4 shadow-sm post-preview-nosh br pointer">
+          <img [src]="item.img" alt="" class="img-fluid br-icon">
+          <h4 class="fw-bold m-0 text-danger">{{item?.title}}</h4>
+          <!-- <p class="m-0">{{item?.title}}</p> -->
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <img src="https://ankuraminternationalschool.in/Images/Homepage/admission_open.jpg" class="img-fluid"
+             width="80%">
+      </div>
+      <div class="col-md-6 align-self-center">
+        <h1 class="display-4 fw-bolder">Admission <span class="stroke">Open</span></h1>
+        <p class="text-muted lh-lg my-3 mx-auto">Enroll your child to Jhabua's fastest growing school. Admissions
+          are open for session 2022-23 from Class- Pre-nursery to Seventh.
+          Admission forms are available at our city office on all working days from 12pm to 5pm.</p>
+        <button class="btn btn-danger btn-danger-hover rounded-0 px-4 " routerLink="admission">Admission
+          Open
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

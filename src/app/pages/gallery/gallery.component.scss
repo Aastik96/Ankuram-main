@@ -1,0 +1,19 @@
+.card{
+    &:hover{
+        .card-body{
+            background-color:#dc3546 !important;
+        }
+        .card-text{
+            color: white !important;
+        }
+    }
+    .card-img-top{
+        width: 100% !important;
+        height: 230px !important;
+        object-fit: cover !important;
+    }
+}
+
+.post-preview{
+    margin: 0 0 20px !important;
+}

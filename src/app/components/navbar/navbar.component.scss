@@ -1,0 +1,29 @@
+
+.nav-link {
+    font-weight: 500;
+    color: #000 !important;
+}
+.active {
+    color: #dc3545 !important;
+}
+.shadow-lg {
+    box-shadow: 0 0rem 1.5rem rgb(0 0 0 / 10%) !important;
+}
+.mega-menu {
+    position: absolute !important;
+    background: #fff !important;
+    border-radius: 2px !important;
+    box-shadow: 0 14px 32px 4px rgb(0 0 0 / 10%) !important;
+    min-width: 180px !important;
+    left: 10px !important;
+    margin-top: 5px !important;
+    text-align: left !important;
+    padding: 15px 0 !important;
+}
+
+@media (min-width:786px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; // remove the gap so it doesn't close
+    }
+}

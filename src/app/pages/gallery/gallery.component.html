@@ -1,0 +1,16 @@
+<div class="container-fluid text-center">
+    <div class="container py-4">
+        <h1 class="display-6 fw-bolder pb-4">School<span class="stroke"> Gallery</span></h1>
+        <!-- <p class="text-muted lh-lg my-3 mx-auto col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, expedita nam. Vero quisquam rem amet, cum, quaerat quo.</p> -->
+        <div class="row">
+            <div class="col-md-4 pointer post-preview" *ngFor="let item of gallery">
+                <div class="card rounded-3" (click)="navigateTo(item.folder)">
+                    <img src="{{item.img}}" class="img-fluid card-img-top">
+                    <div class="card-body rounded-bottom">
+                        <p class="card-text fw-bold">{{item.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
